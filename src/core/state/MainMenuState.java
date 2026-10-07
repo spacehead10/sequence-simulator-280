@@ -1,5 +1,6 @@
 package core.state;
 
+import core.Main;
 import core.Media;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
@@ -31,6 +32,8 @@ public class MainMenuState extends BasicGameState {
     }
 
     public void update(GameContainer gc, StateBasedGame sbg, int delta) throws SlickException {
+        // TODO: Remove this once basic synthesis is no longer the focus of development
+        sbg.enterState(Main.BASIC_SYNTHESIS_STATE);
     }
 
     public void render(GameContainer gc, StateBasedGame sbg, Graphics g) throws SlickException {
